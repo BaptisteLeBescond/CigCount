@@ -14,7 +14,7 @@ public class Pack {
 	private int agents_rate;
 	private HashMap<String, Float> components;
 	
-	public Pack(Type type, String brand, int weight, int nb_cigarettes, float price, int tobacco_rate, int paper_rate, int agents_rate, HashMap<String, Float> components){
+	public Pack(Type type, String brand, float price, int tobacco_rate, int paper_rate, int agents_rate, HashMap<String, Float> components){
 		id = last_id++;
 		this.type = type;
 		this.brand = brand;
@@ -25,5 +25,9 @@ public class Pack {
 		this.paper_rate = paper_rate;
 		this.agents_rate = agents_rate;
 		this.components = components;
+	}
+	
+	public String toString(){
+		return id + " " + type + " " + brand + " " + price + " " + tobacco_rate + " " + paper_rate + " " + agents_rate + " " + components;
 	}
 }
