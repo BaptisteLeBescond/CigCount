@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-public class Paquet {
+public class Pack {
 	private static int last_id=0; 
 	private int id;
 	private Type type;
@@ -14,7 +14,7 @@ public class Paquet {
 	private int agents_rate;
 	private HashMap<String, Float> components;
 	
-	public Paquet(Type type, String brand, int weight, int nb_cigarettes, int price, int tobacco_rate, int paper_rate, int agents_rate, HashMap<String, Float> components){
+	public Pack(Type type, String brand, int weight, int nb_cigarettes, int price, int tobacco_rate, int paper_rate, int agents_rate, HashMap<String, Float> components){
 		id = last_id++;
 		this.type = type;
 		this.brand = brand;
